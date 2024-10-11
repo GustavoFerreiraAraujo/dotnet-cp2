@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CP2.API</name>
+    </assembly>
+    <members>
+        <member name="M:CP2.API.Controllers.VendedorController.Get">
+            <summary>
+            Obtém todos os vendedores cadastrados.
+            </summary>
+            <returns>Lista de vendedores.</returns>
+            <response code="200">Retorna a lista de vendedores.</response>
+            <response code="400">Falha ao obter vendedores.</response>
+        </member>
+        <member name="M:CP2.API.Controllers.VendedorController.GetPorId(System.Int32)">
+            <summary>
+            Obtém um vendedor pelo ID.
+            </summary>
+            <param name="id">ID do vendedor.</param>
+            <returns>Dados do vendedor.</returns>
+            <response code="200">Retorna o vendedor.</response>
+            <response code="400">Falha ao obter o vendedor.</response>
+        </member>
+        <member name="M:CP2.API.Controllers.VendedorController.Post(CP2.Application.Dtos.VendedorDto)">
+            <summary>
+            Cadastra um novo vendedor.
+            </summary>
+            <param name="entity">Dados do vendedor a ser cadastrado.</param>
+            <returns>Vendedor cadastrado.</returns>
+            <response code="200">Vendedor cadastrado com sucesso.</response>
+            <response code="400">Falha ao cadastrar vendedor.</response>
+        </member>
+        <member name="M:CP2.API.Controllers.VendedorController.Put(System.Int32,CP2.Application.Dtos.VendedorDto)">
+            <summary>
+            Atualiza os dados de um vendedor existente.
+            </summary>
+            <param name="id">ID do vendedor a ser atualizado.</param>
+            <param name="entity">Novos dados do vendedor.</param>
+            <returns>Vendedor atualizado.</returns>
+            <response code="200">Vendedor atualizado com sucesso.</response>
+            <response code="400">Falha ao atualizar vendedor.</response>
+        </member>
+        <member name="M:CP2.API.Controllers.VendedorController.Delete(System.Int32)">
+            <summary>
+            Remove um vendedor existente.
+            </summary>
+            <param name="id">ID do vendedor a ser removido.</param>
+            <returns>Status da operação de remoção.</returns>
+            <response code="200">Vendedor removido com sucesso.</response>
+            <response code="400">Falha ao remover vendedor.</response>
+        </member>
+        <member name="T:CP2.API.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:CP2.API.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CP2.API.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CP2.API.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
